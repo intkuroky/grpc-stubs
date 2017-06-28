@@ -19,11 +19,10 @@
     },
     "autoload": {
         "psr-4": {
-
+            "Protobuf\\": "Protobuf/",
+            "GPBMetadata\\": "GPBMetadata/"
         },
         "classmap": [
-            "GPBMetadata",
-            "Protobuf"
         ]
     },
     "autoload-dev": {
