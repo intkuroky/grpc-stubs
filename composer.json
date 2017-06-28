@@ -1,0 +1,35 @@
+{
+    "name": "grpc/stubs-php",
+    "description": "grpc stubs",
+    "keywords": ["grpc", "php", "stubs"],
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "",
+        "email": ""
+      }
+    ],
+    "type": "project",
+    "repositories": [
+        {"type": "git", "url": "https://github.com/intkuroky/grpc-stubs"}
+    ],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+
+        },
+        "classmap": [
+
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
