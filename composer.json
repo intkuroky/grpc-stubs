@@ -1,5 +1,5 @@
 {
-    "name": "grpc/stubs-php",
+    "name": "grpc-stubs/grpc-stubs",
     "description": "grpc stubs",
     "keywords": ["grpc", "php", "stubs"],
     "license": "MIT",
