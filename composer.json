@@ -5,8 +5,8 @@
     "license": "MIT",
     "authors": [
       {
-        "name": "",
-        "email": ""
+        "name": "intkuroky",
+        "email": "383660689@qq.com"
       }
     ],
     "type": "project",
@@ -22,7 +22,8 @@
 
         },
         "classmap": [
-
+            "GPBMetadata",
+            "Protobuf"
         ]
     },
     "autoload-dev": {
