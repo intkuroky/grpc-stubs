@@ -1,0 +1,41 @@
+﻿syntax = "proto3";
+
+package protobuf.business.bills;
+
+// 账单查询器
+service QuerierService {
+    rpc list(BillListRequest) returns (BillListResponse) {}
+} 
+
+// 账单列表结构体
+message BillListRequest {
+    string startDate = 1; // 开始日期
+    string endDate = 2;   // 结束日期
+    int32 wuid = 3;       // 用户ID
+    int32 meid = 4;       // 门店ID
+    int32 bid = 5;        // 品牌ID
+}
+
+// 门店账单结构
+message MerchantBill {
+    string name = 1;
+    int32 settlementAmount = 2;           // 结算金额
+    int32 settlementCount = 3;            // 结算笔数
+    int32 actualAmount = 4;               // 实收金额
+    int32 actualCount = 5;                // 实收笔数
+    int32 receivableAmount = 6;           // 应收金额
+    int32 receivableCount = 7;            // 应收笔数
+    int32 refundAmount = 8;               // 退款金额
+    int32 refundCount = 9;                // 退款笔数
+    int32 merchantCouponAmount = 10;      // 商家优惠金额
+    int32 merchantCouponCount= 11;        // 商家优惠笔数
+    int32 commission = 12;                // 手续费
+    int32 meid = 13;                      // 商户ID
+}
+
+// 账单列表响应体
+message BillListResponse {
+    string startDate = 1;          // 开始日期 
+    string endDate = 2;            // 结束日期
+    repeated MerchantBill merchantBill = 3; // 门店账单
+}
